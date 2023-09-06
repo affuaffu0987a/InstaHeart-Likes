@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.container{
+    width: 20%;
+    /* height: 60%; */
+    border-radius: 3px;
+    position: relative;
+    border: 1px solid white;
+}
+
+.container img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 3px;
+    cursor: pointer;
+   
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: -1;
+}
+.icons i{
+    color: white;
+    margin: 5px 5px;
+}
+#Heart{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 80px;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(2);
+    transition: all ease-in-out .8s;
+}
